@@ -4,7 +4,7 @@ pipeline {
     stage ('Build') {
       steps {
         sh 'printenv'
-        sh 'docker build -t test:""$BUILD_ID"" .'
+        sh 'docker build -t gulshan845401/test:""$BUILD_ID"" .'
         }
       }
      stage ('Publish') {
