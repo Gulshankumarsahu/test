@@ -4,7 +4,7 @@ pipeline {
     stage ('Build') {
       steps {
         sh 'printenv'
-        sh 'docker build -t test .'
+        sh 'docker build -t gulshan845401/test .'
         }
       }
      stage ('Publish') {
