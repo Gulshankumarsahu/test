@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: my-deply
+    labels:
+        app: dev
+        vani: test
+spec:
+    replicas: 3
+    selector:
+      matchLabels:
+          app: dev
+    template:
+        metadata:
+            name: my-deply-pod
+            labels:
+                app: dev
+                vani: test
+        spec:
+            containers:
+                - name: test-cont
+                  image: nginx:1.9.1
