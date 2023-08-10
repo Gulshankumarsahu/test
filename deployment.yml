@@ -10,6 +10,7 @@ spec:
     selector:
       matchLabels:
           app: dev
+          vani: test
     template:
         metadata:
             name: my-deply-pod
@@ -19,4 +20,4 @@ spec:
         spec:
             containers:
                 - name: test-cont
-                  image: nginx:1.9.1
+                  image: gulshan845401/test
